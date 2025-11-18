@@ -1,85 +1,197 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>	
-	<title>Vincent Munene | IT Support Engineer</title>
-	<meta name="description" content="Hello there, my name is Vincent Munene and here you will find about me, resume and blog."/>
-	<meta charset="utf-8">
-	<meta name="keywords" content="Vincent Munene, Vincent Kinoti, Vincent Munene Kinoti, Vincent Munene IT Support Engineer">
-	<meta name="author" content="Vincent Munene"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="twitter:site" content="@vincentmunenekinoti.github.io" />
-	<meta name="twitter:creator" content="@vincentmunenek" />
-	<meta property="og:url" content="https://vincentmunenekinoti.github.io" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Vincent Munene| IT Support Engineer" />
-	<meta name="description" content="HTML,CSS,JAVASCRIPT">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script data-ad-client="ca-pub-9131722836075129" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<meta name="p:domain_verify" content="872ffc0307c6a0e3583fc560ca6f721f"/>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vincent — ICT Support & Solutions</title>
+  <meta name="description" content="Professional ICT Support services — hardware, software, networking, training, and remote support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4;
+      --glass: rgba(255,255,255,0.04);
+      --radius:14px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;padding:0;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:linear-gradient(180deg,#071024 0%, #081224 60%);color:#e6eef6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* header */
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:52px;height:52px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cf6);display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav{display:flex;gap:18px;align-items:center}
+    .btn{background:var(--accent);color:#042028;padding:10px 14px;border-radius:10px;font-weight:600}
+
+    /* hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-bottom:40px}
+    .card{background:var(--card);padding:28px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+    h1{font-size:34px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 18px}
+
+    /* highlights */
+    .highlights{display:flex;gap:12px;flex-wrap:wrap}
+    .chip{background:var(--glass);padding:10px 12px;border-radius:10px;font-weight:600}
+
+    /* services grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+    .service{padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));}
+    .service h3{margin:8px 0 6px}
+    .service p{color:var(--muted);margin:0}
+
+    /* contact */
+    form{display:flex;flex-direction:column;gap:12px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:10px;color:inherit}
+    input::placeholder,textarea::placeholder{color:#7f8b99}
+    .muted{color:var(--muted);font-size:14px}
+
+    footer{margin-top:34px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;align-items:center}
+
+    /* responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:560px){
+      header{flex-direction:column;align-items:flex-start;gap:12px}
+      .grid{grid-template-columns:1fr}
+      .logo{width:44px;height:44px}
+      h1{font-size:26px}
+    }
+  </style>
 </head>
-
 <body>
-	<center>
-		<div class="cool-menu">
-			<ul>
-				<a href="index.html">About Me</a>
-				<a href="blog.html">Blog</a>
-				<a href="resume.html">Resume</a>
-				<a href="contact.html">Contact</a>
-			</ul>
-		</div>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">VM</div>
+        <div>
+          <div style="font-weight:700">Vincent Munene</div>
+          <div style="font-size:13px;color:var(--muted);margin-top:2px">ICT Support Specialist</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn">Contact</a>
+      </nav>
+    </header>
 
-		<div>
-			<img src="img/vin.png" class="passport" alt="cool passport">
-		</div>
+    <section class="hero">
+      <div class="card">
+        <h1>Reliable ICT support for teams and small businesses</h1>
+        <p class="lead">I set up and maintain hardware & software, secure networks, help users, and run remote support so your team stays productive.</p>
+        <div class="highlights">
+          <div class="chip">Hardware setup</div>
+          <div class="chip">Network & security</div>
+          <div class="chip">Remote support</div>
+          <div class="chip">User training</div>
+        </div>
 
-		<div class="cool-titles">
-			<h1 class="header-small"> IT Support Engineer</h1>
-			<h2 class="header-big">VINCENT MUNENE</h2>
-		</div>
-		
-		<div class="about-card">
-			<h4>WHO I AM</h4>
-			<p>Hello, my name is Vincent Munene and you have just unearthed my portfolio :)</p>
-			<p>Now, about me. I have a great love for understanding how systems work and using this
-				knowledge to solve practical problems in the society and having fun while at it.
-				This, I believe led me to the course I pursued at Jomo Kenyatta University of Agriculture and
-				Technology (thats rather mouthful, let's stick with JKUAT). At JKUAT I pursued a degree in
-				Mathematics and Computer Science.
-			</p>
-			<p>Here, you will access my <a href="resume.html">resume</a>, <a href="blog.html" target="_blank">blog</a>,
-			and please <a href="contact.html">contact</a> me, or share a link to this portfolio.</p>
-		</div>
-	
-		<div class="about-card">
-			<h4>CAREER OBJECTIVES</h4>
-			<p>Everyone has these, let me have these too :-)</p>
-				<ul>
-					<li>To apply my knowledge into practical skills so as to grow and learn more in
-						any sector and also discover much more in other areas so as to achieve my
-						set goal and that of the organization.</li>
-					<li>To work in a dynamic and competitive environment that will enhance growth
-						and knowledge of the ever-changing economy to achieve goals and objectives
-						set.</li>
-				</ul>
-		</div>
-		
-		<div class="blog-card">
-			<h5 class="blog-card-text">/* Find the latest posts here */ </h5>
-			<a href="blog.html"><button class="cool-button"> <h3>MY BLOG</h3></button></a>
-		</div>
-	
-		<div>
-			<a href="https://www.twitter.com/vincentmunenek/" target="_blank" title="twitter"><img src="img/twitter.png"></a>
-			<a href="https://www.facebook.com/vincentmunenekinoti/" target="_blank" title="facebook"><img src="img/facebook.png"></a>
-			<a href="https://www.linkedin.com/in/vincentmunenekinoti/" target="_blank" title="linkedIn"><img src="img/linkedin.png"></a>
-			<a href="https://www.instagram.com/vincentmunenekinoti/" target="_blank" title="instagram"><img src="img/instagram.png"></a>
-		</div>
-		<hr><br>
-		<div style="color: white;">
-				&copy 2021 Vincent Munene. All rights reserved.
-		</div>
-	</center>
+        <div class="grid" style="margin-top:22px">
+          <div class="service">
+            <strong>Workstation setup</strong>
+            <p>Deploy, image, and configure Windows & Linux desktops and laptops.</p>
+          </div>
+          <div class="service">
+            <strong>Network support</strong>
+            <p>Wi‑Fi planning, VPNs, switches, and basic firewall configuration.</p>
+          </div>
+          <div class="service">
+            <strong>Backups & DR</strong>
+            <p>Simple backup strategies, routine checks and recovery drills.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <aside class="card">
+        <h3 style="margin-top:0">Get a quick quote</h3>
+        <p class="muted">Tell me what you need (e.g., "10 laptops imaged + onsite setup") and I'll reply with availability and an estimate.</p>
+
+        <form id="quickForm" onsubmit="handleForm(event)" style="margin-top:12px">
+          <input id="name" placeholder="Your name" required />
+          <input id="email" type="email" placeholder="Email" required />
+          <input id="brief" placeholder="Short request (e.g. 5 PCs + network)" required />
+          <button class="btn" type="submit">Send request</button>
+          <div id="formMsg" class="muted" style="margin-top:8px"></div>
+        </form>
+      </aside>
+    </section>
+
+    <section id="about" class="card" style="margin-bottom:22px">
+      <h2 style="margin-top:0">About</h2>
+      <p class="muted">I’m an ICT Support Specialist with experience in hardware & software setup, remote troubleshooting, and user training. I focus on fast, reliable support and teaching users how to avoid repeat issues.</p>
+      <ul style="color:var(--muted);margin-top:12px">
+        <li>First-line technical support and ticket handling</li>
+        <li>Imaging and device provisioning (Windows, Linux)</li>
+        <li>Network setup, Wi‑Fi surveys and basic security</li>
+      </ul>
+    </section>
+
+    <section id="services" class="card" style="margin-bottom:22px">
+      <h2 style="margin-top:0">Services & rates</h2>
+      <p class="muted">Typical offerings — contact for tailored quotes.</p>
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
+        <div style="padding:12px;background:var(--glass);border-radius:10px">
+          <strong>Onsite support</strong>
+          <div class="muted">Hourly or daily rates. Includes hardware troubleshooting and setup.</div>
+        </div>
+        <div style="padding:12px;background:var(--glass);border-radius:10px">
+          <strong>Remote support</strong>
+          <div class="muted">Quick remote fixes, configuration, and user coaching via remote session.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="muted">Prefer email or WhatsApp. This contact form sends a simulated message (no server).</p>
+      <form id="contactForm" onsubmit="handleContact(event)">
+        <input id="c-name" placeholder="Your name" required />
+        <input id="c-email" type="email" placeholder="Email" required />
+        <textarea id="c-message" rows="4" placeholder="How can I help?" required></textarea>
+        <button class="btn" type="submit">Send message</button>
+        <div id="contactMsg" class="muted" style="margin-top:8px"></div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Vincent Munene</div>
+      <div class="muted">Built with ❤️ — customize this template</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const brief = document.getElementById('brief').value.trim();
+      const msg = document.getElementById('formMsg');
+      // Simulated send — replace with real endpoint when ready
+      msg.textContent = `Thanks ${name}! Your request ("${brief}") has been sent. I'll get back to ${email}.`;
+      e.target.reset();
+    }
+
+    function handleContact(e){
+      e.preventDefault();
+      const name = document.getElementById('c-name').value.trim();
+      const email = document.getElementById('c-email').value.trim();
+      const message = document.getElementById('c-message').value.trim();
+      const out = document.getElementById('contactMsg');
+      out.textContent = `Thanks ${name} — message received. I'll reply to ${email} soon.`;
+      e.target.reset();
+    }
+  </script>
 </body>
 </html>
